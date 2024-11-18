@@ -1,48 +1,82 @@
-/* License: GPLv3 */
+/**** This project is licensed under GPLv3, any brand names or logos used in this project belong to their respective owners. ****/
+
+/*** Global ***/
 
 body {
     background-color: black;
 }
 
-h1 {
-    color: rgb(137, 68, 206);
-    font-size: 200%;
-}
-
 p {
     color: white;
-    font-size: 100%;
+    font-size: 110%;
     text-align: justify;
     text-justify: inter-character;
 }
 
-table {
+div#article table {
     text-align: center;
     vertical-align: middle;
     border-collapse: collapse;
     width: 70%;
 }
 
-th,
-td {
+div#article th,
+div#article td {
     text-align: center;
     vertical-align: middle;
     padding: 8px;
+    border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
 
-tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.5);
+div#article tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-th {
+div#article th {
     /* background-color: rgba(70, 70, 70, 0.1); */
     color: white;
     text-decoration: underline;
     text-decoration: solid;
 }
 
-div {
+/*** IDs ***/
+
+div#child {
+    padding-right: 8px;
+    box-sizing: border-box;
+    width: 15%;
+    float: left;
+    border: 1px solid white;
+}
+
+div#child2 {
+    padding-right: 8px;
+    box-sizing: border-box;
+    width: 40%;
+    float: left;
+    border: 1px solid white;
+}
+
+div#article {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+}
+
+div#article a {
+    color: rgb(120, 120, 255);
+}
+
+table#center_table {
+    margin: auto;
+}
+
+/*** Classes ***/
+
+.box {
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.25);
 }
@@ -69,18 +103,11 @@ div {
     filter: blur(5px);
 }
 
-.article {
-    margin: auto;
-    width: 30%;
-    padding: 10px;
-    /* white-space: nowrap; */
-    overflow: hidden;
-}
-
 .title {
-    color: rgb(137, 68, 206);
+    color: rgb(160, 160, 160);
     font-size: 200%;
     text-align: center;
+    text-decoration: underline;
 }
 
 .center_img {
@@ -88,6 +115,28 @@ div {
     margin: auto;
 }
 
-.center_table {
-    margin: auto;
+.wrapper {
+    margin-right: -8px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    /* border-top: 1px solid black; */
+}
+
+.footer table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: white;
+    font-size: 80%;
+    text-align: center;
 }
