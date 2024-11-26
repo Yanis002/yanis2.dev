@@ -2,8 +2,10 @@
 
 Source repository of [yanis2.dev](https://yanis2.dev)
 
-Pages:
-- index.html
+Files & Folders:
+- ./index.html - homepage
+- ./style.css - main stylesheet
+- ./res/ - resources (images, fonts, etc.)
 
 ## License
 
