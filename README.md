@@ -1,6 +1,6 @@
 # yanis2.dev
 
-Source repository of [yanis2.dev](https://yanis2.dev)
+Source repository of my website [yanis2.dev](https://yanis2.dev)
 
 Files & Folders:
 - ./index.html - homepage
