@@ -1,142 +1,144 @@
 /**** This project is licensed under GPLv3, any brand names or logos used in this project belong to their respective owners. ****/
 
-/*** Global ***/
-
-body {
-    background-color: black;
+@media screen and (max-width: 500px) {
+    aside, section, article {
+        /* todo: mobile version */
+        width: 100%;
+        position: absolute;
+        display: block;
+        clear: both;
+    }
 }
 
-p {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(res/background.svg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+hr {
+    color: rgb(1, 1, 1);
+}
+
+header {
+    font-family: "Courier New", Courier, monospace;
+}
+
+header .title {
+    color: rgb(230, 140, 140);
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+}
+
+main {
+    font-family: "Courier New", Courier, monospace;
+}
+
+main a {
+    color: rgb(120, 120, 255);
+}
+
+main p {
     color: white;
-    font-size: 110%;
+    font-size: 105%;
     text-align: justify;
     text-justify: inter-character;
 }
 
-div#article table {
-    text-align: center;
-    vertical-align: middle;
-    border-collapse: collapse;
-    width: 70%;
-}
-
-div#article th,
-div#article td {
-    text-align: center;
-    vertical-align: middle;
-    padding: 8px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-div#article tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-div#article th {
-    /* background-color: rgba(70, 70, 70, 0.1); */
-    color: white;
-    text-decoration: underline;
-    text-decoration: solid;
-}
-
-/*** IDs ***/
-
-div#child {
-    padding-right: 8px;
-    box-sizing: border-box;
-    width: 15%;
+main aside {
+    width: 20%;
+    height: 83vh;
     float: left;
-    border: 1px solid white;
-}
-
-div#child2 {
-    padding-right: 8px;
-    box-sizing: border-box;
-    width: 40%;
-    float: left;
-    border: 1px solid white;
-}
-
-div#article {
-    margin: auto;
-    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 10px;
-    /* white-space: nowrap; */
-    overflow: hidden;
+
+    visibility: hidden;
 }
 
-div#article a {
-    color: rgb(120, 120, 255);
+main aside .title {
+    color: rgb(230, 140, 140);
+    text-align: center;
+    margin: 0px;
 }
 
-table#center_table {
-    margin: auto;
-}
-
-/*** Classes ***/
-
-.box {
+main aside.container {
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.25);
+    overflow: auto;
 }
 
-.container {
+main section {
+    width: 40%;
+    height: 83vh;
+    float: left;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+main section .title {
+    color: rgb(230, 140, 140);
+    text-align: center;
+    margin: 0px;
+}
+
+main section.container {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.25);
+    overflow: auto;
+}
+
+main article {
+    width: 25%;
+    height: 83vh;
+    padding: 10px;
+
+    visibility: hidden;
+}
+
+main article .title {
+    color: rgb(230, 140, 140);
+    text-align: center;
+    margin: 0px;
+}
+
+main article.container {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.25);
+    overflow: auto;
+}
+
+footer {
+    display: block;
+    clear: both;
+    margin-bottom: -1vh;
     font-family: "Courier New", Courier, monospace;
     color: white;
-    position: relative;
-    border: 0;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background-image: url("res/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    filter: blur(5px);
-}
-
-.title {
-    color: rgb(160, 160, 160);
-    font-size: 200%;
     text-align: center;
-    text-decoration: underline;
 }
 
-.center_img {
-    display: block;
-    margin: auto;
-}
-
-.wrapper {
-    margin-right: -8px;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    /* border-top: 1px solid black; */
-}
-
-.footer table {
+footer table {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer p {
+footer p {
     color: white;
     font-size: 80%;
     text-align: center;
+}
+
+footer .centered_img {
+    display: block;
+    margin: auto;
 }
