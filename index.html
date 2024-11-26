@@ -13,26 +13,44 @@
 
 <body>
     <header>
-        <h1 class="title">Welcome!</h1>
-
-        <hr>
+        <h1 class="title">The book of knowledge</h1>
     </header>
 
     <main>
         <div>
             <aside class="container">
-                <h2 class="title">Sample</h2>
+                <h2 class="title">Chapters</h2>
 
-                <p>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">About me</a></li>
+                        <!-- <li><a href="">The main projects I'm working on</a></li> -->
+                        <!-- <li><a href="">What is a decompilation?</a></li> -->
+                        <!-- <li><a href="">Introduction to Ocarina of Time</a></li> -->
+                        <!-- <li><a href="">Introduction to HackerN64</a></li> -->
+                        <!-- <li><a href="">Introduction to Fast64</a></li> -->
+                        <!-- <li><a href="">OoT glitches and stuff</a></li> -->
+                    </ul>
+                </nav>
+
+                <!-- <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloremque dicta placeat
                     accusantium. Dignissimos quia illum aspernatur consequuntur distinctio perferendis, alias culpa cum
                     minus eaque ipsa ullam exercitationem possimus cumque?
-                </p>
+                </p> -->
             </aside>
 
             <section class="container">
                 <h2 class="title">About me</h2>
                 <br>
+
+                <!-- 
+                    Example word-to-definition:
+
+                    <p>
+                        Lorem ipsum <span class="clickable">dolor</span>
+                    </p>
+                -->
 
                 <p>
                     Welcome to my website! I'm Yanis (he/him) and I mostly work on Ocarina of Time related projects.
@@ -90,21 +108,15 @@
                 </p>
             </section>
 
-            <article class="container">
-                <h2 class="title">Sample</h2>
+            <article class="container" id="hide">
+                <h2 class="title">Dictionnary</h2>
 
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloremque dicta placeat
-                    accusantium. Dignissimos quia illum aspernatur consequuntur distinctio perferendis, alias culpa cum
-                    minus eaque ipsa ullam exercitationem possimus cumque?
-                </p>
+                <p id="definition"></p>
             </article>
         </div>
     </main>
 
     <footer>
-        <hr>
-
         <table>
             <tr>
                 <td>
@@ -130,6 +142,8 @@
             respective owners.
         </p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
